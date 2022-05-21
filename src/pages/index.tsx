@@ -15,19 +15,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-        МЕДІА ПРОСТІР 
-        </h1>
+      <div className={styles.header}>
+        <a className={styles.logo} title="МЕДІА ПРОСТІР">
+            <img src="/logoSmall.jpg" alt="МЕДІА ПРОСТІР" className={styles.logoimg} />
+        </a>
+        <ul className={styles.social_list}>
+          <li className={styles.social_item}>
+            <a href="https://www.facebook.com/mediaprostirnet" target={"_blank"}>
+              <img src="/fb.svg" alt="Медіапростір Facebook#" /> 
+            </a>
+          </li>
+          <li className={styles.social_item}>
+            <a href="https://www.youtube.com/c/mediaprostir" target={"_blank"}>
+              <img src="/youtube.svg" alt="Медіапростір Youtube" />
+            </a>
+          </li>
+          <li className={styles.social_item}>
+            <a href="https://www.instagram.com/zatoka_karolino_bugaz/?fbclid=IwAR32BBIDBajgatziKzU-sEZh6rsHJbNToVO2ei0N8jg3tRUsgW74DlADPRs" target={"_blank"}>
+            <img src="/instagram.svg" alt="Медіапростір Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
 
+      <main className={styles.main}>
         <p className={styles.description}>
         Загальнодержавна суспільно-політична газета
-          {/* <code className={styles.code}>src/pages/index.tsx</code> */}
         </p>
       </main>
 
       <div className={styles.background}>
-        <span className={styles.span}>«МЕДІА ПРОСТІР» — щорічна суспільно-політична газета в Україні</span>
+        <span className={styles.backgroundText}>«МЕДІА ПРОСТІР» — щорічна суспільно-політична газета в Україні</span>
       </div>
 
       <main className={styles.main}>        
@@ -61,7 +79,6 @@ export default function Home() {
           <div className={styles.card}>
             <p>Станом на лютий 2022 року колектив редакції нараховує <b>134 незалежних кореспонденти.</b></p>
           </div>
-          
         </div>
       </main>
 
