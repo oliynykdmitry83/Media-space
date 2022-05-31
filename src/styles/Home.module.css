@@ -1,4 +1,4 @@
-.background {
+.banner {
   height: 250px;
   width: 100%;
   background-image: url(/bg-image.jpg);
@@ -11,7 +11,19 @@
   background-size: cover;
 }
 
-.backgroundText {
+.fullscreenMode {
+  background: url(/bg-image.jpg) no-repeat center fixed;
+}
+
+.fullscreenMode .banner {
+  background: #09094f;
+}
+
+.fullscreenMode .container {
+  background: #fff;
+}
+
+.bannerText {
   height: 100%;
   text-shadow: 4px 5px 6px black;
   display: flex;
